@@ -1,4 +1,5 @@
 import dash
+import dash_html_components as html
 import dash_bootstrap_components as dbc
 
 estilos = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", "https://fonts.googleapis.com/icon?family=Material+Icons", dbc.themes.COSMO]
@@ -7,6 +8,7 @@ dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.4
 
 
 app = dash.Dash(__name__, external_stylesheets=estilos + [dbc_css])
+app.title= 'MoneyRich'
 
 app.config['suppress_callback_exceptions'] = True
 app.scripts.config.serve_locally = True
