@@ -102,17 +102,20 @@ layout = dbc.Col([
 
                             dbc.Col([
                                 html.Legend('Excluir categorias',
-                                            style={'color': 'red'}),
+                                            style={'color': 'red', 'margin-left': '32px'}),
                                 dbc.Checklist(
                                     id="checklist-selected-style-receita",
-                                    options=[],
+                                    options=[{"label": i, "value": i} for i in cat_receita],
                                     value=[],
                                     label_checked_style={'color': 'red'},
                                     input_checked_style={
                                         'backgroundColor': 'blue', 'borderColor': 'orange'},
                                 ),
                                 dbc.Button(
-                                    "Remover", color='warning', id="remove-category-receita", style={'margin-top': '20px'}),
+                                    "Remover", 
+                                    color='warning', 
+                                    id="remove-category-receita", 
+                                    style={'margin-top': '20px', 'margin-left': '32px'}),
                             ], width=6),
                         ]),
                     ], title='Adicionar/Remover Categorias'),
@@ -202,10 +205,11 @@ layout = dbc.Col([
 
                             dbc.Col([
                                 html.Legend("Excluir categorias", style={
-                                    'color': 'red'}),
+                                    'color': 'red', 'margin-left': '32px'}),
                                 dbc.Checklist(
                                     id="checklist-selected-style-despesa",
-                                    options=[],
+                                    options=[{"label": i, "value": i} for i in cat_despesa], 
+                                    style={'margin-left': '32px'},
                                     value=[],
                                     label_checked_style={
                                         "color": "red"},
@@ -213,7 +217,10 @@ layout = dbc.Col([
                                                          "borderColor": "#ea6258"},
                                 ),
                                 dbc.Button(
-                                    "Remover", color="warning", id="remove-category-despesa", style={"margin-top": "20px"}),
+                                    "Remover", 
+                                    color="warning", 
+                                    id="remove-category-despesa", 
+                                    style={"margin-top": "20px", 'margin-left': '32px'}),
                             ], width=6)
                         ]),
                     ], title="Adicionar/Remover Categorias",
