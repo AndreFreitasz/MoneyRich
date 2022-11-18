@@ -23,4 +23,6 @@ Atualmente estamos enfrentando alguns problemas nesta página, e estamos fazendo
 
 O primeiro e segundo gráfico da parte de dashboards também não estão 100% funcionais, por isso vamos fazer mais algumas alterações nessa área.
 <hr />
-Para iniciar o projeto é apenas rodar <strong>python myindex.py</strong>, talvez peça para instalar alguns compenentes de algumas bibliotecas, para isso precisará baixar o "pip" e rodar <strong>pip install <biblioteca solicitada></strong> ou <strong>pip <biblioteca solicitada> install</strong>
+Para iniciar o projeto é apenas rodar 
+<h2><code>python myindex.py</code></h2>
+Talvez peça para instalar alguns compenentes de algumas bibliotecas, para isso precisará baixar o "pip" e rodar <code>pip install "biblioteca solicitada"</code> ou <code>pip "biblioteca solicitada" install</code>.
